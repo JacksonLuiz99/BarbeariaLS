@@ -1,16 +1,41 @@
-/* styles.css */
-.video-container {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
-    height: 0;
-    overflow: hidden;
-    max-width: 100%;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #3335;
 }
 
-.video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+header {
+    background-color: #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 40px; /* Ajuste conforme necessário */
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-left: 20px; /* Espaçamento entre itens do menu */
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px; /* Ajuste conforme necessário */
+}
+
+.menu a:hover {
+    text-decoration: underline;
 }
