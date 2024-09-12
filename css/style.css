@@ -22,6 +22,7 @@ body {
     align-items: center;
     z-index: 1000; /* Garante que o cabeçalho fique acima dos outros elementos */
     border: none;
+    text-align: center;
 }
 
 
@@ -54,7 +55,6 @@ body {
     margin-left: 15px;
     text-decoration: none; /* Remove o sublinhado */
 }
-
 
 
 .cover-section {
