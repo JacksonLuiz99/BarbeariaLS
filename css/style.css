@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #000;
+    color: #FFD700; /* Amarelo */
+    padding: 10px 0;
+}
+
+.header .logo {
+    width: 150px;
+}
+
+.header .nav-link {
+    color: #FFD700 !important;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.service-box {
+    flex: 1;
+    background-color: #FFD700; /* Amarelo */
+    color: #000; /* Preto */
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.map-container {
+    height: 300px;
+    background: #ddd; /* Cinza claro como placeholder */
+}
+
+.client-carousel img {
+    width: 100%;
+    height: auto;
+}
+
+.footer {
+    background-color: #000;
+    color: #FFD700; /* Amarelo */
+    padding: 10px;
+    text-align: center;
+}
+
+.footer a {
+    color: #FFD700;
+    margin: 0 10px;
+}

@@ -1,144 +1,108 @@
-<!doctype html>
-<html lang="pt-br">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html lang="pt-BR">
 
-    <!-- favicon -->
-     <link rel="shortcut icon" type="image/x-icon" href="img/favicon_io/android-chrome-192x192.png" >
-     <link rel="shortcut icon" type="image/x-icon" href="img/favicon_io/android-chrome-512x512.png" >
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-32x32.png">
-    <link rel="manifest" href="/site.webmanifest">
-    
-    
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    
-    <!-- style css -->
-     <link rel="stylesheet" href="css/style.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barbearia LS</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
 
-    <title>Barbearia LS </title>
-  </head>
-  <body>
-      <header>
-        <nav class="navbar navbar-default" >
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggler collapse"
-                  data-bs-toggle="collapse" data-target="#barra-navegacao">
-                  <span class="sr-only">Alternar Menu</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-          </button>
-          <a href="#" class="navbar-brand">LOGO</a>
-        </div>
+<body>
+  <!-- Cabeçalho -->
+  <header class="header d-flex justify-content-between align-items-center container">
+    <img src="img/LogoBarbeariaLS.png" alt="Logo da Barbearia LS" class="logo">
+    <nav>
+      <a class="nav-link" href="#home">Home</a>
+      <a class="nav-link" href="#services">Serviços</a>
+      <a class="nav-link" href="#address">Endereço</a>
+      <a class="nav-link" href="#clients">Clientes</a>
+      <a class="nav-link" href="#contact">Contatos</a>
+    </nav>
+  </header>
 
-        <div class="collapse navbar-collapse" id="barra-navegacao">
+  <!-- Capa -->
+  <div>
 
-          <ul class="nav navbar-nav navbar-right">
-            <li> <a href="#">Home</a></li>
-            <li> <a href="#">Serviços</a></li>
-            <li> <a href="#">Endereço</a></li>
-            <li> <a href="#">Clientes</a></li>
-            <li> <a href="#">Contato</a></li>
-              
-            </ul>
+    <section>
+
+      <div>
+        <a href="img/capa.png"></a>
       </div>
+    </section>
 
-       
-    </div>
-</nav>
-        <div class="container">
-          <div class="page-header">
-            <h1>menu de navegação</h1>
+    <!-- Nossos Serviços -->
+    <section id="services" class="container mt-5">
+      <h2 class="text-center">Nossos Serviços</h2>
+      <div class="services">
+        <div class="service-box">Corte Social</div>
+        <div class="service-box">Corte Degrade</div>
+        <div class="service-box">Corte Navalhado</div>
+        <div class="service-box">Corte + Barba</div>
+        <div class="service-box">Sombrancelhas</div>
+        <div class="service-box">Design</div>
+      </div>
+    </section>
+
+    <!-- Endereço -->
+    <section id="address" class="container mt-5">
+      <h2 class="text-center">Nosso Endereço</h2>
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d240.15364528421216!2d-56.09207513311464!3d-15.620563659833644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x939dae1fff5ee463%3A0x95207cbd98d30ed7!2sR.%20Pres.%20Leite%20Figueiredo%2C%20598%20-%20Dom%20Aquino%2C%20Cuiab%C3%A1%20-%20MT%2C%2078015-025!5e0!3m2!1spt-BR!2sbr!4v1726111680586!5m2!1spt-BR!2sbr"
+          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </section>
+
+    <!-- Clientes -->
+    <section id="clients" class="container mt-5">
+      <h2 class="text-center">Nossos Clientes</h2>
+      <div id="clientCarousel" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/CorteDegradeComLuzes2.png" class="d-block w-100" alt="Cliente 1">
           </div>
-          
+          <div class="carousel-item">
+            <img src="img/CorteDegradeComLuzes.png" class="d-block w-100" alt="Cliente 2">
+          </div>
+          <div class="carousel-item">
+            <img src="img/CorteDegradeAmoicanoComLuzes.png" class="d-block w-100" alt="Cliente 3">
+          </div>
+          <div class="carousel-item">
+            <img src="img/CorteDegrade.png" class="d-block w-100" alt="Cliente 4">
+          </div>
         </div>
-  
-      </header>
+        <button class="carousel-control-prev" type="button" data-bs-target="#clientCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#clientCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Próximo</span>
+        </button>
+      </div>
+    </section>
 
-      <main>
-        <section>
-          <br><br><br><br><br><br><br><br><br><br>
-          <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="img/AmoicanoInfantil.png" class="d-block w-100" alt="Imagem 1">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/CorteDegrade.png" class="d-block w-100" alt="Imagem 2">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/CorteDegradeAmoicanoComLuzes.png" class="d-block w-100" alt="Imagem 3">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/CorteDegradeComLuzes.png" class="d-block w-100" alt="Imagem 3">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/CorteDegradeComLuzes2.png" class="d-block w-100" alt="Imagem 3">
-                </div>
-            </div>
-            <!-- Adicione controles se desejar -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-        </section>
-        <section>
-          Nossos serviços(descrição do que a barbearia oferece)
-          <ul>
-            <li>Corte Social</li>
-            <li>Corte Degrade</li>
-            <li>Corte Navalhado</li>
-            <li>Corte  + Barba</li>
-            <li>Sombrancelhas</li>
-            <li>Pigmentação</li>
-            <li>Design</li>
-            <li>E muito mais</li>
-          </ul>
-        </section>
+    <!-- Seção Especial -->
+    <section id="special" class="container mt-5">
+      <h2 class="text-center">Homenagem Especial</h2>
+      <p class="text-center">Em homenagem ao jogador do Atlético Paranaense que tivemos a honra de atender na Barbearia.
+      </p>
+    </section>
+    <img src="img/RomuloCardoso.png" class="img-fluid" alt="Homenagem">
+    <img src="img/RomuloCardosoCorte.png" class="img-fluid" alt="Homenagem">
+  </div>
 
-        <section>
-          <h3>Nossa unidade (Localização no maps)</h3>
-        </section>
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Barbearia LS &copy; 2024</p>
+    <a href="https://www.instagram.com/barbeariia_ls/" target="_blank">Instagram</a> |
+    <a href="https://api.whatsapp.com/send?phone=5565992920478&text=Ol%C3%A1%2C%20estou%20vindo%20atrav%C3%A9s%20do%20seu%20site!!!"
+      target="_blank">WhatsApp</a>
+  </footer>
 
-        <section>
-          Nossos clientes(imagens dos melhores cortes)
-        </section>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
 
-        <section>
-          <h3>Passou por aqui!</h3>
-          <p>Seção dedicada ao atleta do Atletico paranaense</p>
-        </section>
-
-      </main>
-      <footer>
-        <nav>
-          <h3>Redes sociais no rodapé da página</h3>
-          Proprietário Leonardo Emanoel
-          
-        </nav>
-      </footer>
-
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
-  </body>
 </html>
