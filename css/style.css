@@ -1,19 +1,33 @@
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #003366, #000000); /* Degradê de azul escuro para preto */
+    background: linear-gradient(to bottom, #003366, #000000);
+    /* Degradê de azul escuro para preto */
     color: #333;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+    /* Evita a rolagem horizontal */
 }
 
 .header {
+    position: fixed; /* Fixa o cabeçalho no topo da janela */
+    top: 0; /* Alinha o cabeçalho no topo */
+    left: 0;
+    right: 0;
     background-color: #000;
-    color: #FFD700; /* Amarelo */
-    padding: 10px 0;
+    color: #ffd700; /* Amarelo */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000; /* Garante que o cabeçalho fique acima dos outros elementos */
 }
+
 
 .header .logo {
     width: 150px;
+    max-width: 100%;
+    /* Limita a largura da logo */
 }
 
 .header nav {
@@ -26,11 +40,21 @@ body {
     margin-left: 15px;
 }
 
+/* Fiz uma gambiarra aqui por não estava funcionando o link do WhatsApp */
+.header .nav-linkk {
+    color: #FFD700 !important;
+    margin-left: 15px;
+}
+
 .cover-section {
     position: relative;
     width: 100%;
+    max-width: 100%;
+    /* Garante que a seção de capa não ultrapasse a largura máxima */
     height: 300px;
     overflow: hidden;
+    margin: 20px 0;
+    /* Margem superior e inferior de 20px */
 }
 
 .cover-img {
@@ -40,23 +64,32 @@ body {
 }
 
 h2 {
-    color: #FFD700; /* Dourado */
+    color: #FFD700;
+    /* Dourado */
     text-align: center;
     margin: 20px 0;
 }
 
 p {
-    color: #FFFFFF; /* Branco */
+    color: #FFFFFF;
+    /* Branco */
 }
 
 .address-text {
-    color: #333; /* Cor padrão para o endereço */
+    color: #333;
+    /* Cor padrão para o endereço */
 }
 
 #services {
-    background-color: #000; /* Preto */
-    color: #FFD700; /* Amarelo */
-    padding: 30px 0;
+    background-color: #000;
+    /* Preto */
+    color: #FFD700;
+    /* Amarelo */
+    padding: 30px;
+    max-width: 100%;
+    /* Garante que a seção de serviços não ultrapasse a largura máxima */
+    margin: 20px 0;
+    /* Margem superior e inferior de 20px */
 }
 
 .services {
@@ -67,8 +100,10 @@ p {
 
 .service-box {
     flex: 1;
-    background-color: #FFD700; /* Amarelo */
-    color: #000; /* Preto */
+    background-color: #FFD700;
+    /* Amarelo */
+    color: #000;
+    /* Preto */
     padding: 20px;
     text-align: center;
     margin: 10px;
@@ -76,12 +111,17 @@ p {
 }
 
 #address {
-    padding: 30px 0;
+    padding: 30px;
+    max-width: 100%;
+    /* Garante que a seção de endereço não ultrapasse a largura máxima */
+    margin: 20px 0;
+    /* Margem superior e inferior de 20px */
 }
 
 .map-container {
     position: relative;
-    background: #ddd; /* Cinza claro como placeholder */
+    background: #ddd;
+    /* Cinza claro como placeholder */
     border-radius: 5px;
 }
 
@@ -89,7 +129,8 @@ p {
     margin-top: 10px;
     text-align: center;
     font-size: 16px;
-    color: #333; /* Cor padrão para o endereço */
+    color: #333;
+    /* Cor padrão para o endereço */
 }
 
 .client-gallery {
@@ -115,8 +156,12 @@ p {
 }
 
 #special {
-    padding: 30px 0;
+    padding: 30px;
     text-align: center;
+    max-width: 100%;
+    /* Garante que a seção especial não ultrapasse a largura máxima */
+    margin: 20px 0;
+    /* Margem superior e inferior de 20px */
 }
 
 .special-gallery {
@@ -133,9 +178,12 @@ p {
 
 .footer {
     background-color: #000;
-    color: #FFD700; /* Amarelo */
+    color: #FFD700;
+    /* Amarelo */
     padding: 20px;
     text-align: center;
+    margin-top: 20px;
+    /* Margem superior de 20px */
 }
 
 .footer p {
