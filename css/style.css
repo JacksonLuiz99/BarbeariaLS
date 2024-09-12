@@ -1,5 +1,9 @@
 body {
     font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #003366, #000000); /* Degradê de azul escuro para preto */
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
 .header {
@@ -31,8 +35,22 @@ body {
 
 .cover-img {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
+}
+
+h2 {
+    color: #FFD700; /* Dourado */
+    text-align: center;
+    margin: 20px 0;
+}
+
+p {
+    color: #FFFFFF; /* Branco */
+}
+
+.address-text {
+    color: #333; /* Cor padrão para o endereço */
 }
 
 #services {
@@ -62,8 +80,16 @@ body {
 }
 
 .map-container {
+    position: relative;
     background: #ddd; /* Cinza claro como placeholder */
     border-radius: 5px;
+}
+
+.address-text {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: #333; /* Cor padrão para o endereço */
 }
 
 .client-gallery {
@@ -85,7 +111,7 @@ body {
 
 .client-img p {
     margin-top: 10px;
-    color: #000;
+    color: #ffffff;
 }
 
 #special {
