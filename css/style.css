@@ -7,6 +7,8 @@ body {
     padding: 0;
     overflow-x: hidden;
     /* Evita a rolagem horizontal */
+    display: inline-block; /* Faz os itens da lista se comportarem como blocos inline */
+    margin-right: 16px; /* Espaçamento entre os itens */
 }
 
 .header {
@@ -229,7 +231,7 @@ p {
     text-align: center;
     margin-top: 20px;
     /* Margem superior de 20px */
-}
+    }
 
 .footer p {
     margin: 0;
