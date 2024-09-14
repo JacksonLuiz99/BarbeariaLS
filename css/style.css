@@ -1,130 +1,81 @@
+/* Estilos gerais */
 body {
     font-family: Arial, sans-serif;
     background: linear-gradient(to bottom, #003366, #000000);
-    /* Degradê de azul escuro para preto */
     color: #333;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    /* Evita a rolagem horizontal */
-    display: inline-block;
-    /* Faz os itens da lista se comportarem como blocos inline */
-    margin-right: 16px;
-    /* Espaçamento entre os itens */
 }
 
 .header {
     position: fixed;
-    /* Fixa o cabeçalho no topo da janela */
     top: 0;
-    /* Alinha o cabeçalho no topo */
     left: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.98);
-    /* Preto com 70% de opacidade
-    color: #ffd700; /* Amarelo */
+    color: #ffd700;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
-    /* Garante que o cabeçalho fique acima dos outros elementos */
     border: none;
     text-align: center;
-    display: inline-block;
-    /* Faz os itens da lista se comportarem como blocos inline */
-    margin-right: 10px;
-    /* Espaçamento entre os itens */
 }
 
-
 .header .logo {
-    display: inline-block;
     width: 150px;
     max-width: 100%;
-    /* Limita a largura da logo */
-
 }
 
 .header nav {
-    display: inline-block;
-    /* Faz os itens da lista se comportarem como blocos inline */
-    margin-right: 10px;
-    /* Espaçamento entre os itens */
-}
-
-.header .nav-link {
-    color: #FFD700 !important;
-    margin-left: 15px;
-}
-
-/* Fiz uma gambiarra aqui por não estava funcionando o link do WhatsApp */
-.header .nav-linkk {
-    color: #FFD700 !important;
-    margin-left: 15px;
+    display: flex;
+    gap: 15px;
 }
 
 .header .nav-link,
 .header .nav-linkk {
     color: #ffd700 !important;
-    margin-left: 15px;
     text-decoration: none;
-    /* Remove o sublinhado */
 }
 
-
 .cover-section {
-
     position: relative;
     width: 100%;
-    max-width: 100%;
-    /* Garante que a seção de capa não ultrapasse a largura máxima */
     height: 100vh;
     overflow: hidden;
-    margin: 150px 0;
-    /* Margem superior e inferior de 20px */
+    margin: 0;
 }
 
 .cover-img {
     display: block;
     margin: auto;
     max-width: 100%;
-    /* garante que a imagem não ultrapasse a largura do seu container */
     max-height: 100%;
-    /* garante que a imagem não ultrapasse a altura do seu container */
-    animation: fadeIn 2s ease-in;
-    /* Animação de entrada */
     border: none;
 }
 
-
 h2 {
     color: #FFD700;
-    /* Dourado */
     text-align: center;
     margin: 20px 0;
 }
 
 p {
     color: #FFFFFF;
-    /* Branco */
 }
 
 .address-text {
     color: #333;
-    /* Cor padrão para o endereço */
+    font-size: 16px;
 }
 
 #services {
     background-color: #000;
-    /* Preto */
     color: #FFD700;
-    /* Amarelo */
     padding: 30px;
-    max-width: 100%;
-    /* Garante que a seção de serviços não ultrapasse a largura máxima */
     margin: 20px 0;
-    /* Margem superior e inferior de 20px */
 }
 
 .services {
@@ -136,51 +87,36 @@ p {
 .service-box {
     flex: 1;
     background-color: #FFD700;
-    /* Amarelo */
     color: #000;
-    /* Preto */
     padding: 20px;
     text-align: center;
     margin: 10px;
     border-radius: 5px;
     transition: all 0.3s ease;
-    /* Transição suave para todas as mudanças */
 }
 
 .service-box:hover {
     background-color: #FFC107;
-    /* Amarelo mais escuro */
     color: #000;
-    /* Preto */
     transform: scale(1.05);
-    /* Aumenta um pouco o tamanho */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* Adiciona uma sombra */
 }
-
 
 #address {
     padding: 30px;
-    max-width: 100%;
-    /* Garante que a seção de endereço não ultrapasse a largura máxima */
     margin: 20px 0;
-    /* Margem superior e inferior de 20px */
 }
 
 .map-container {
     position: relative;
     background: #ddd;
-    /* Cinza claro como placeholder */
     border-radius: 5px;
     overflow: hidden;
-    /* Garante que o efeito de zoom não ultrapasse os limites do container */
     transition: transform 0.5s ease-in-out;
-    /* Transição suave para o zoom */
 }
 
 .map-container:hover {
     transform: scale(1.05);
-    /* Aumenta o tamanho do container do mapa em 5% */
 }
 
 .map-container iframe {
@@ -194,7 +130,6 @@ p {
     text-align: center;
     font-size: 16px;
     color: #333;
-    /* Cor padrão para o endereço */
 }
 
 .client-gallery {
@@ -207,11 +142,8 @@ p {
     flex: 1;
     text-align: center;
     overflow: hidden;
-    /* Garante que o efeito de zoom não ultrapasse os limites do container */
     border-radius: 5px;
-    /* Adiciona bordas arredondadas */
     transition: transform 0.3s ease-in-out;
-    /* Transição suave para o efeito de zoom */
 }
 
 .client-img img {
@@ -219,12 +151,10 @@ p {
     height: auto;
     border-radius: 5px;
     transition: transform 0.3s ease-in-out;
-    /* Transição suave para o efeito de zoom */
 }
 
 .client-img:hover img {
     transform: scale(1.1);
-    /* Aumenta a imagem em 10% ao passar o mouse */
 }
 
 .client-img p {
@@ -235,10 +165,7 @@ p {
 #special {
     padding: 30px;
     text-align: center;
-    max-width: 100%;
-    /* Garante que a seção especial não ultrapasse a largura máxima */
     margin: 20px 0;
-    /* Margem superior e inferior de 20px */
 }
 
 .special-gallery {
@@ -256,11 +183,9 @@ p {
 .footer {
     background-color: #000;
     color: #FFD700;
-    /* Amarelo */
     padding: 20px;
     text-align: center;
     margin-top: 20px;
-    /* Margem superior de 20px */
 }
 
 .footer p {
@@ -277,22 +202,76 @@ p {
     text-decoration: underline;
 }
 
-.footer p,
-.footer-links {
-    text-align: center;
-}
-
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-        /* Inicia com a imagem fora da tela */
+/* Media Queries */
+@media (max-width: 767px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
     }
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
-        /* Termina com a imagem em sua posição original */
+    .header nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .header .nav-link, .header .nav-linkk {
+        margin-left: 0;
+    }
+
+    .cover-img {
+        height: auto;
+    }
+
+    .service-box {
+        flex: 1 1 100%;
+        margin: 5px 0;
+    }
+
+    .special-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .special-gallery img {
+        width: 80%;
+        max-width: 300px;
+    }
+
+    .map-container iframe {
+        height: 200px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .header {
+        padding: 10px 15px;
+    }
+
+    .cover-img {
+        height: auto;
+    }
+
+    .service-box {
+        flex: 1 1 calc(50% - 20px);
+    }
+
+    .special-gallery img {
+        width: 50%;
+        max-width: 300px;
+    }
+
+    .map-container iframe {
+        height: 250px;
+    }
+}
+
+@media (min-width: 992px) {
+    .header {
+        padding: 10px 20px;
+    }
+
+    .service-box {
+        flex: 1 1 calc(33% - 20px);
     }
 }
