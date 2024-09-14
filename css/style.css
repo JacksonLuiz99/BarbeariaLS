@@ -58,20 +58,22 @@ body {
 
 
 .cover-section {
+    
     position: relative;
     width: 100%;
     max-width: 100%;
     /* Garante que a seção de capa não ultrapasse a largura máxima */
-    height: 300px;
+    height: 100vh;
     overflow: hidden;
     margin: 20px 0;
     /* Margem superior e inferior de 20px */
 }
 
 .cover-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    display: block;
+  margin: auto;
+  max-width: 100%; /* garante que a imagem não ultrapasse a largura do seu container */
+  max-height: 100%; /* garante que a imagem não ultrapasse a altura do seu container */
     animation: fadeIn 2s ease-in; /* Animação de entrada */
 }
 
