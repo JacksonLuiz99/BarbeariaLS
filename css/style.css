@@ -7,26 +7,34 @@ body {
     padding: 0;
     overflow-x: hidden;
     /* Evita a rolagem horizontal */
-    display: inline-block; /* Faz os itens da lista se comportarem como blocos inline */
-    margin-right: 16px; /* Espaçamento entre os itens */
+    display: inline-block;
+    /* Faz os itens da lista se comportarem como blocos inline */
+    margin-right: 16px;
+    /* Espaçamento entre os itens */
 }
 
 .header {
-    position: fixed; /* Fixa o cabeçalho no topo da janela */
-    top: 0; /* Alinha o cabeçalho no topo */
+    position: fixed;
+    /* Fixa o cabeçalho no topo da janela */
+    top: 0;
+    /* Alinha o cabeçalho no topo */
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.96); /* Preto com 70% de opacidade
+    background-color: rgba(0, 0, 0, 0.98);
+    /* Preto com 70% de opacidade
     color: #ffd700; /* Amarelo */
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1000; /* Garante que o cabeçalho fique acima dos outros elementos */
+    z-index: 1000;
+    /* Garante que o cabeçalho fique acima dos outros elementos */
     border: none;
     text-align: center;
-    display: inline-block; /* Faz os itens da lista se comportarem como blocos inline */
-  margin-right: 10px; /* Espaçamento entre os itens */
+    display: inline-block;
+    /* Faz os itens da lista se comportarem como blocos inline */
+    margin-right: 10px;
+    /* Espaçamento entre os itens */
 }
 
 
@@ -35,12 +43,14 @@ body {
     width: 150px;
     max-width: 100%;
     /* Limita a largura da logo */
-    
+
 }
 
 .header nav {
-    display: inline-block; /* Faz os itens da lista se comportarem como blocos inline */
-  margin-right: 10px; /* Espaçamento entre os itens */
+    display: inline-block;
+    /* Faz os itens da lista se comportarem como blocos inline */
+    margin-right: 10px;
+    /* Espaçamento entre os itens */
 }
 
 .header .nav-link {
@@ -58,28 +68,33 @@ body {
 .header .nav-linkk {
     color: #ffd700 !important;
     margin-left: 15px;
-    text-decoration: none; /* Remove o sublinhado */
+    text-decoration: none;
+    /* Remove o sublinhado */
 }
 
 
 .cover-section {
-    
+
     position: relative;
     width: 100%;
     max-width: 100%;
     /* Garante que a seção de capa não ultrapasse a largura máxima */
     height: 100vh;
     overflow: hidden;
-    margin: 20px 0;
+    margin: 150px 0;
     /* Margem superior e inferior de 20px */
 }
 
 .cover-img {
     display: block;
-  margin: auto;
-  max-width: 100%; /* garante que a imagem não ultrapasse a largura do seu container */
-  max-height: 100%; /* garante que a imagem não ultrapasse a altura do seu container */
-    animation: fadeIn 2s ease-in; /* Animação de entrada */
+    margin: auto;
+    max-width: 100%;
+    /* garante que a imagem não ultrapasse a largura do seu container */
+    max-height: 100%;
+    /* garante que a imagem não ultrapasse a altura do seu container */
+    animation: fadeIn 2s ease-in;
+    /* Animação de entrada */
+    border: none;
 }
 
 
@@ -120,20 +135,27 @@ p {
 
 .service-box {
     flex: 1;
-    background-color: #FFD700; /* Amarelo */
-    color: #000; /* Preto */
+    background-color: #FFD700;
+    /* Amarelo */
+    color: #000;
+    /* Preto */
     padding: 20px;
     text-align: center;
     margin: 10px;
     border-radius: 5px;
-    transition: all 0.3s ease; /* Transição suave para todas as mudanças */
+    transition: all 0.3s ease;
+    /* Transição suave para todas as mudanças */
 }
 
 .service-box:hover {
-    background-color: #FFC107; /* Amarelo mais escuro */
-    color: #000; /* Preto */
-    transform: scale(1.05); /* Aumenta um pouco o tamanho */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra */
+    background-color: #FFC107;
+    /* Amarelo mais escuro */
+    color: #000;
+    /* Preto */
+    transform: scale(1.05);
+    /* Aumenta um pouco o tamanho */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Adiciona uma sombra */
 }
 
 
@@ -150,12 +172,15 @@ p {
     background: #ddd;
     /* Cinza claro como placeholder */
     border-radius: 5px;
-    overflow: hidden; /* Garante que o efeito de zoom não ultrapasse os limites do container */
-    transition: transform 0.5s ease-in-out; /* Transição suave para o zoom */
+    overflow: hidden;
+    /* Garante que o efeito de zoom não ultrapasse os limites do container */
+    transition: transform 0.5s ease-in-out;
+    /* Transição suave para o zoom */
 }
 
 .map-container:hover {
-    transform: scale(1.05); /* Aumenta o tamanho do container do mapa em 5% */
+    transform: scale(1.05);
+    /* Aumenta o tamanho do container do mapa em 5% */
 }
 
 .map-container iframe {
@@ -181,20 +206,25 @@ p {
 .client-img {
     flex: 1;
     text-align: center;
-    overflow: hidden; /* Garante que o efeito de zoom não ultrapasse os limites do container */
-    border-radius: 5px; /* Adiciona bordas arredondadas */
-    transition: transform 0.3s ease-in-out; /* Transição suave para o efeito de zoom */
+    overflow: hidden;
+    /* Garante que o efeito de zoom não ultrapasse os limites do container */
+    border-radius: 5px;
+    /* Adiciona bordas arredondadas */
+    transition: transform 0.3s ease-in-out;
+    /* Transição suave para o efeito de zoom */
 }
 
 .client-img img {
     width: 100%;
     height: auto;
     border-radius: 5px;
-    transition: transform 0.3s ease-in-out; /* Transição suave para o efeito de zoom */
+    transition: transform 0.3s ease-in-out;
+    /* Transição suave para o efeito de zoom */
 }
 
 .client-img:hover img {
-    transform: scale(1.1); /* Aumenta a imagem em 10% ao passar o mouse */
+    transform: scale(1.1);
+    /* Aumenta a imagem em 10% ao passar o mouse */
 }
 
 .client-img p {
@@ -231,7 +261,7 @@ p {
     text-align: center;
     margin-top: 20px;
     /* Margem superior de 20px */
-    }
+}
 
 .footer p {
     margin: 0;
@@ -247,7 +277,8 @@ p {
     text-decoration: underline;
 }
 
-.footer p, .footer-links {
+.footer p,
+.footer-links {
     text-align: center;
 }
 
@@ -255,10 +286,13 @@ p {
 @keyframes fadeIn {
     from {
         opacity: 0;
-        transform: translateY(-20px); /* Inicia com a imagem fora da tela */
+        transform: translateY(-20px);
+        /* Inicia com a imagem fora da tela */
     }
+
     to {
         opacity: 1;
-        transform: translateY(0); /* Termina com a imagem em sua posição original */
+        transform: translateY(0);
+        /* Termina com a imagem em sua posição original */
     }
 }
