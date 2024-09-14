@@ -23,13 +23,10 @@ body {
     z-index: 1000; /* Garante que o cabeçalho fique acima dos outros elementos */
     border: none;
     text-align: center;
-    display: inline-block; /* Faz os itens da lista se comportarem como blocos inline */
-  margin-right: 10px; /* Espaçamento entre os itens */
 }
 
 
 .header .logo {
-    display: inline-block;
     width: 150px;
     max-width: 100%;
     /* Limita a largura da logo */
@@ -37,8 +34,8 @@ body {
 }
 
 .header nav {
-    display: inline-block; /* Faz os itens da lista se comportarem como blocos inline */
-  margin-right: 10px; /* Espaçamento entre os itens */
+    display: flex;
+    align-items: center;
 }
 
 .header .nav-link {
