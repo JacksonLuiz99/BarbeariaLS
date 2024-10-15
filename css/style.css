@@ -122,7 +122,7 @@ p {
     /* Margem superior e inferior de 20px */
 }
 
-.services {
+.service {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
