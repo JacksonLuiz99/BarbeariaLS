@@ -37,16 +37,6 @@ body {
     /* Espaçamento entre os itens */
 }
 
-#menu{
-
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin: 10px;
-    width: 100%;
-    max-width: 100%;
-}
-
 
 .header .logo {
     display: inline-block;
@@ -76,10 +66,10 @@ body {
 
 .header .nav-link,
 .header .nav-linkk {
-    display: flex;
     color: #ffd700 !important;
+    margin-left: 15px;
     text-decoration: none;
-    margin: 30px;
+    /* Remove o sublinhado */
 }
 
 
@@ -91,9 +81,9 @@ body {
     /* Garante que a seção de capa não ultrapasse a largura máxima */
     height: 100vh;
     overflow: hidden;
-    margin: 15px;
-    margin-top: 150px;
-   }
+    margin: 150px 0;
+    /* Margem superior e inferior de 20px */
+}
 
 .cover-img {
     display: block;
@@ -195,7 +185,7 @@ p {
 
 .map-container iframe {
     width: 100%;
-    height: 500px;
+    height: 100%;
     border: 0;
 }
 
@@ -238,7 +228,7 @@ p {
 }
 
 .client-img p {
-    margin-top: 50px;
+    margin-top: 10px;
     color: #ffffff;
 }
 
@@ -263,63 +253,9 @@ p {
     border-radius: 5px;
 }
 
-#whatsapp,
-.whatsapp-button {
-    position: fixed;
-    transition: all 0.5s ease;
-    background-color: #25d366;
-    display: block;
-    text-align: center;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-    border-radius: 50px;
-    padding-right: 0;
-    color: #ffffff;
-    font-weight: 700;
-    font-size: 30px;
-    bottom: 70px;
-    right: 15px;
-    border: 0;
-    z-index: 9999;
-    line-height: 50px;
-}
-
-#whatsapp,
-.whatsapp-button:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    display: block;
-    width: 60px;
-    height: 60px;
-    background-color: #25d366;
-    border-radius: 50%;
-    animation: pulse-border 1500ms ease-out infinite;
-}
-
-#whatsapp:focus,
-.whatsapp-button:focus {
-    border: none;
-    outline: none;
-}
-
-@keyframes pulse-border {
-    0% {
-        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
-        opacity: 1;
-    }
-
-    100% {
-        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
-        opacity: 0;
-    }
-}
-
 .footer {
-    background-color: #c5aa11;
-    color: #000000;
+    background-color: #000;
+    color: #FFD700;
     /* Amarelo */
     padding: 20px;
     text-align: center;
@@ -329,11 +265,10 @@ p {
 
 .footer p {
     margin: 0;
-    color: #000000;
 }
 
 .footer-links a {
-    color: #000000;
+    color: #FFD700;
     margin: 0 10px;
     text-decoration: none;
 }
