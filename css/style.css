@@ -62,15 +62,17 @@ body {
 .header .nav-linkk {
     color: #FFD700 !important;
     margin-left: 15px;
+   
 }
 
 .header .nav-link,
 .header .nav-linkk {
+
     color: #ffd700 !important;
     margin-left: 15px;
     text-decoration: none;
-    /* Remove o sublinhado */
-}
+    margin: 20px;
+  }
 
 
 .cover-section {
@@ -82,6 +84,8 @@ body {
     height: 100vh;
     overflow: hidden;
     margin: 150px 0;
+    padding-top: 15px;
+    margin-bottom: -1%;
     /* Margem superior e inferior de 20px */
 }
 
