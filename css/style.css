@@ -54,25 +54,12 @@ body {
 }
 
 .header .nav-link {
-    color: #FFD700 !important;
-    margin-left: 15px;
-}
-
-/* Fiz uma gambiarra aqui por não estava funcionando o link do WhatsApp */
-.header .nav-linkk {
-    color: #FFD700 !important;
-    margin-left: 15px;
-   
-}
-
-.header .nav-link,
-.header .nav-linkk {
 
     color: #ffd700 !important;
     margin-left: 15px;
     text-decoration: none;
     margin: 20px;
-  }
+}
 
 
 .cover-section {
@@ -111,14 +98,12 @@ h2 {
 
 p {
     color: #FFFFFF;
-    /* Branco */
+
 }
 
 #services {
     background-color: #000;
-    /* Preto */
     color: #FFD700;
-    /* Amarelo */
     padding: 30px;
     max-width: 100%;
     /* Garante que a seção de serviços não ultrapasse a largura máxima */
@@ -135,9 +120,8 @@ p {
 .service-box {
     flex: 1;
     background-color: #FFD700;
-    /* Amarelo */
     color: #000;
-    /* Preto */
+
     padding: 20px;
     text-align: center;
     margin: 10px;
@@ -148,9 +132,7 @@ p {
 
 .service-box:hover {
     background-color: #FFC107;
-    /* Amarelo mais escuro */
     color: #000;
-    /* Preto */
     transform: scale(1.05);
     /* Aumenta um pouco o tamanho */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -169,7 +151,6 @@ p {
 .map-container {
     position: relative;
     background: #ddd;
-    /* Cinza claro como placeholder */
     border-radius: 5px;
     overflow: hidden;
     /* Garante que o efeito de zoom não ultrapasse os limites do container */
@@ -253,8 +234,7 @@ p {
 }
 
 .footer {
-    background-color: #000;
-    color: #FFD700;
+    background-color: #00162d;
     /* Amarelo */
     padding: 20px;
     text-align: center;
@@ -267,7 +247,7 @@ p {
 }
 
 .footer-links a {
-    color: #FFD700;
+    color: #fff;
     margin: 0 10px;
     text-decoration: none;
 }
@@ -309,7 +289,8 @@ p {
         gap: 10px;
     }
 
-    .header .nav-link, .header .nav-linkk {
+    .header .nav-link,
+    .header .nav-linkk {
         margin-left: 0;
     }
 
@@ -377,7 +358,6 @@ p {
     right: 15px;
     border: 0;
     z-index: 9999;
-    line-height: 50px;
 }
 
 #whatsapp,
