@@ -37,6 +37,16 @@ body {
     /* Espaçamento entre os itens */
 }
 
+#menu{
+
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 10px;
+    width: 100%;
+    max-width: 100%;
+}
+
 
 .header .logo {
     display: inline-block;
@@ -52,6 +62,10 @@ body {
     margin-right: 10px;
     /* Espaçamento entre os itens */
 }
+div{
+    border: solid 3px red;
+}
+
 
 .header .nav-link {
     color: #FFD700 !important;
@@ -66,8 +80,8 @@ body {
 
 .header .nav-link,
 .header .nav-linkk {
+    display: flex;
     color: #ffd700 !important;
-    margin-left: 15px;
     text-decoration: none;
     /* Remove o sublinhado */
 }
@@ -81,9 +95,9 @@ body {
     /* Garante que a seção de capa não ultrapasse a largura máxima */
     height: 100vh;
     overflow: hidden;
-    margin: 150px 0;
-    /* Margem superior e inferior de 20px */
-}
+    margin: 15px;
+    margin-top: 150px;
+   }
 
 .cover-img {
     display: block;
@@ -254,8 +268,8 @@ p {
 }
 
 .footer {
-    background-color: #000;
-    color: #FFD700;
+    background-color: #c5aa11;
+    color: #000000;
     /* Amarelo */
     padding: 20px;
     text-align: center;
@@ -265,10 +279,11 @@ p {
 
 .footer p {
     margin: 0;
+    color: #000000;
 }
 
 .footer-links a {
-    color: #FFD700;
+    color: #000000;
     margin: 0 10px;
     text-decoration: none;
 }
