@@ -8,92 +8,70 @@
     content="Barbearia LS em Cuiabá oferece cortes de cabelo masculino com alta qualidade e estilo. Conheça nossos serviços especializados e veja a satisfação dos nossos clientes.">
   <meta name="keywords"
     content="barbearia Cuiabá, cortes de cabelo masculino, estilo de cabelo, grooming, cuidados com o cabelo, barbearia de qualidade, serviços de barbearia, cortes modernos, cuidado com a aparência">
+  <link rel="canonical" href="https://barbearials.exemplo.com/">
 
-  <title> Barbearia LS</title>
+  <title>Barbearia LS</title>
 
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            brand: {
-              gold: '#D4AF37',
-              amber: '#FFBF00',
-              dark: '#0A0A0A',
-              zinc: '#18181B'
-            }
-          },
-          fontFamily: {
-            sans: ['Inter', 'sans-serif'],
-            display: ['Montserrat', 'sans-serif']
-          }
-        }
-      }
-    }
-  </script>
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Barbearia LS">
+  <meta property="og:title" content="Barbearia LS | Cortes Masculinos em Cuiabá">
+  <meta property="og:description"
+    content="Barbearia LS em Cuiabá oferece cortes de cabelo masculino com alta qualidade e estilo. Conheça nossos serviços especializados e veja a satisfação dos nossos clientes.">
+  <meta property="og:url" content="https://barbearials.exemplo.com/">
+  <meta property="og:image" content="https://barbearials.exemplo.com/img/capa.png">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Barbearia LS | Cortes Masculinos em Cuiabá">
+  <meta name="twitter:description"
+    content="Barbearia LS em Cuiabá oferece cortes de cabelo masculino com alta qualidade e estilo.">
+  <meta name="twitter:image" content="https://barbearials.exemplo.com/img/capa.png">
+
+  <!-- CSS gerado via Tailwind CLI (ver README para instruções de build) -->
+  <link rel="stylesheet" href="css/style.css">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
-  
+
   <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  
-  <!-- Estilos Customizados (Mantendo apenas o essencial para animações e ajustes finos) -->
-  <style type="text/tailwindcss">
-    @layer utilities {
-      .glass {
-        @apply bg-zinc-950/80 backdrop-blur-md border-b border-white/10;
-      }
-      .text-gold {
-        @apply text-brand-gold;
-      }
-      .bg-gold {
-        @apply bg-brand-gold;
-      }
-      .hover-gold:hover {
-        @apply text-brand-amber;
-      }
-    }
-    
-    html {
-      scroll-behavior: smooth;
-    }
 
-    body {
-      @apply bg-zinc-950 text-zinc-300 antialiased;
-    }
-
-    .animate-float {
-      animation: float 3s ease-in-out infinite;
-    }
-
-    @keyframes float {
-      0%, 100% { transform: translateY(0px); }
-      50% { transform: translateY(-10px); }
-    }
-
-    .whatsapp-pulse {
-      box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
-      animation: pulse-whatsapp 2s infinite;
-    }
-
-    @keyframes pulse-whatsapp {
-      0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
-      70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
-      100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
-    }
-  </style>
+  <!-- Preload da imagem do hero (elemento LCP) -->
+  <link rel="preload" as="image" href="img/capa.webp" type="image/webp" fetchpriority="high">
 
   <!--favicon_io-->
   <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-32x32.png">
-  <link rel="manifest" href="/site.webmanifest">
+  <link rel="manifest" href="img/favicon_io/site.webmanifest">
 
+  <!-- Dados estruturados (Schema.org) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HairSalon",
+    "name": "Barbearia LS",
+    "image": "https://barbearials.exemplo.com/img/capa.png",
+    "url": "https://barbearials.exemplo.com/",
+    "telephone": "+5565992920478",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "R. Pres. Leite Figueiredo, 598 - Dom Aquino",
+      "addressLocality": "Cuiabá",
+      "addressRegion": "MT",
+      "postalCode": "78015-025",
+      "addressCountry": "BR"
+    },
+    "sameAs": [
+      "https://www.instagram.com/barbeariia_ls/"
+    ]
+  }
+  </script>
 </head>
 
 <body>
@@ -101,7 +79,11 @@
   <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 glass">
     <div class="container mx-auto px-4 h-20 flex justify-between items-center">
       <div class="flex items-center">
-        <img src="img/Logotipo_Barbearia_Retrô_Preto_Branco.png" alt="Logo da Barbearia LS" class="h-14 w-auto brightness-0 invert">
+        <picture>
+          <source srcset="img/Logotipo_Barbearia_Retrô_Preto_Branco.webp" type="image/webp">
+          <img src="img/Logotipo_Barbearia_Retrô_Preto_Branco.png" alt="Logo da Barbearia LS" class="h-14 w-auto brightness-0 invert"
+            width="500" height="500" decoding="async">
+        </picture>
       </div>
       
       <nav class="hidden md:flex space-x-8" aria-label="Navegação Principal">
@@ -112,7 +94,7 @@
       </nav>
 
       <button id="mobile-menu-button" type="button" class="md:hidden text-brand-gold" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menu">
-        <i class="bi bi-list text-3xl"></i>
+        <i class="bi bi-list text-3xl" aria-hidden="true"></i>
       </button>
     </div>
 
@@ -129,7 +111,11 @@
   <!-- Capa -->
   <section id="capa" class="relative h-screen w-full overflow-hidden flex items-center justify-center">
     <div class="absolute inset-0 bg-black/60 z-10"></div>
-    <img src="img/capa.png" class="absolute inset-0 w-full h-full object-cover" alt="Ambiente Barbearia LS">
+    <picture>
+      <source srcset="img/capa.webp" type="image/webp">
+      <img src="img/capa.png" class="absolute inset-0 w-full h-full object-cover" alt="Ambiente Barbearia LS"
+        width="1920" height="2560" fetchpriority="high" decoding="async">
+    </picture>
     
     <div class="relative z-20 text-center px-4 max-w-4xl mx-auto">
       <h1 class="text-5xl md:text-7xl font-display text-white mb-6 uppercase tracking-tighter">Estilo & <span class="text-gold">Precisão</span></h1>
@@ -141,7 +127,7 @@
     </div>
     
     <div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 animate-float">
-      <i class="bi bi-chevron-down text-brand-gold text-3xl"></i>
+      <i class="bi bi-chevron-down text-brand-gold text-3xl" aria-hidden="true"></i>
     </div>
   </section>
 
@@ -156,7 +142,7 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <div class="group p-8 bg-zinc-900 border border-white/5 hover:border-brand-gold/50 transition-all duration-500">
           <div class="w-12 h-12 mb-6 flex items-center justify-center bg-zinc-800 text-brand-gold group-hover:bg-gold group-hover:text-black transition-all">
-            <i class="bi bi-scissors text-2xl"></i>
+            <i class="bi bi-scissors text-2xl" aria-hidden="true"></i>
           </div>
           <h3 class="text-xl font-bold text-white mb-3">Corte Social</h3>
           <p class="text-zinc-400 text-sm">O clássico que nunca sai de moda. Alinhamento perfeito para o dia a dia.</p>
@@ -164,7 +150,7 @@
 
         <div class="group p-8 bg-zinc-900 border border-white/5 hover:border-brand-gold/50 transition-all duration-500">
           <div class="w-12 h-12 mb-6 flex items-center justify-center bg-zinc-800 text-brand-gold group-hover:bg-gold group-hover:text-black transition-all">
-            <i class="bi bi-lightning text-2xl"></i>
+            <i class="bi bi-lightning text-2xl" aria-hidden="true"></i>
           </div>
           <h3 class="text-xl font-bold text-white mb-3">Corte Degradê</h3>
           <p class="text-zinc-400 text-sm">Transição suave e moderna que realça o visual e o contorno do rosto.</p>
@@ -172,7 +158,7 @@
 
         <div class="group p-8 bg-zinc-900 border border-white/5 hover:border-brand-gold/50 transition-all duration-500">
           <div class="w-12 h-12 mb-6 flex items-center justify-center bg-zinc-800 text-brand-gold group-hover:bg-gold group-hover:text-black transition-all">
-            <i class="bi bi-layers text-2xl"></i>
+            <i class="bi bi-layers text-2xl" aria-hidden="true"></i>
           </div>
           <h3 class="text-xl font-bold text-white mb-3">Corte Navalhado</h3>
           <p class="text-zinc-400 text-sm">Acabamento ultra preciso com técnica de navalha para um estilo impecável.</p>
@@ -180,7 +166,7 @@
 
         <div class="group p-8 bg-zinc-900 border border-white/5 hover:border-brand-gold/50 transition-all duration-500">
           <div class="w-12 h-12 mb-6 flex items-center justify-center bg-zinc-800 text-brand-gold group-hover:bg-gold group-hover:text-black transition-all">
-            <i class="bi bi-person-fill text-2xl"></i>
+            <i class="bi bi-person-fill text-2xl" aria-hidden="true"></i>
           </div>
           <h3 class="text-xl font-bold text-white mb-3">Corte + Barba</h3>
           <p class="text-zinc-400 text-sm">O combo completo para renovar o visual e cuidar de cada detalhe.</p>
@@ -188,7 +174,7 @@
 
         <div class="group p-8 bg-zinc-900 border border-white/5 hover:border-brand-gold/50 transition-all duration-500">
           <div class="w-12 h-12 mb-6 flex items-center justify-center bg-zinc-800 text-brand-gold group-hover:bg-gold group-hover:text-black transition-all">
-            <i class="bi bi-eye text-2xl"></i>
+            <i class="bi bi-eye text-2xl" aria-hidden="true"></i>
           </div>
           <h3 class="text-xl font-bold text-white mb-3">Sobrancelhas</h3>
           <p class="text-zinc-400 text-sm">Design estratégico para harmonizar o olhar e limpar a expressão.</p>
@@ -196,7 +182,7 @@
 
         <div class="group p-8 bg-zinc-900 border border-white/5 hover:border-brand-gold/50 transition-all duration-500">
           <div class="w-12 h-12 mb-6 flex items-center justify-center bg-zinc-800 text-brand-gold group-hover:bg-gold group-hover:text-black transition-all">
-            <i class="bi bi-palette text-2xl"></i>
+            <i class="bi bi-palette text-2xl" aria-hidden="true"></i>
           </div>
           <h3 class="text-xl font-bold text-white mb-3">Design</h3>
           <p class="text-zinc-400 text-sm">Cortes personalizados e riscos modernos para expressar sua identidade.</p>
@@ -216,13 +202,18 @@
       <div class="max-w-5xl mx-auto bg-zinc-900 p-4 border border-white/5 rounded-sm overflow-hidden shadow-2xl">
         <div class="relative overflow-hidden group">
           <iframe
+            title="Mapa com a localização da Barbearia LS"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d240.15364528421216!2d-56.09207513311464!3d-15.620563659833644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x939dae1fff5ee463%3A0x95207cbd98d30ed7!2sR.%20Pres.%20Leite%20Figueiredo%2C%20598%20-%20Dom%20Aquino%2C%20Cuiab%C3%A1%20-%20MT%2C%2078015-025!5e0!3m2!1spt-BR!2sbr!4v1726111680586!5m2!1spt-BR!2sbr"
             width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="grayscale invert opacity-80 group-hover:grayscale-0 group-hover:invert-0 group-hover:opacity-100 transition-all duration-700"></iframe>
         </div>
-        <div class="p-8 text-center">
+        <div class="p-8 text-center space-y-3">
           <p class="text-zinc-300 text-lg flex items-center justify-center gap-3">
-            <i class="bi bi-geo-alt-fill text-brand-gold"></i>
+            <i class="bi bi-geo-alt-fill text-brand-gold" aria-hidden="true"></i>
             R. Pres. Leite Figueiredo, 598 - Dom Aquino, Cuiabá - MT, 78015-025
+          </p>
+          <p class="text-zinc-300 text-lg flex items-center justify-center gap-3">
+            <i class="bi bi-telephone-fill text-brand-gold" aria-hidden="true"></i>
+            <a href="tel:+5565992920478" class="hover:text-brand-gold transition-colors">(65) 99292-0478</a>
           </p>
         </div>
       </div>
@@ -239,44 +230,60 @@
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <!-- Card Cliente 1 -->
-        <div class="group relative overflow-hidden bg-zinc-900 border border-white/5">
+        <div tabindex="0" class="group relative overflow-hidden bg-zinc-900 border border-white/5 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold">
           <div class="aspect-[4/5] overflow-hidden">
-            <img src="img/KidsCorte.jpeg" alt="Corte Kids" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+            <picture>
+              <source srcset="img/KidsCorte.webp" type="image/webp">
+              <img src="img/KidsCorte.jpeg" alt="Corte Kids" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                width="1200" height="1600" loading="lazy" decoding="async">
+            </picture>
           </div>
-          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6">
             <h4 class="text-brand-gold font-bold mb-2 uppercase tracking-widest text-sm">Corte Kids</h4>
             <p class="text-zinc-300 text-xs">Transforme o visual do seu pequeno com um corte divertido e moderno.</p>
           </div>
         </div>
 
         <!-- Card Cliente 2 -->
-        <div class="group relative overflow-hidden bg-zinc-900 border border-white/5">
+        <div tabindex="0" class="group relative overflow-hidden bg-zinc-900 border border-white/5 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold">
           <div class="aspect-[4/5] overflow-hidden">
-            <img src="img/ReflexoAlinhado.jpeg" alt="Reflexo Alinhado" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+            <picture>
+              <source srcset="img/ReflexoAlinhado.webp" type="image/webp">
+              <img src="img/ReflexoAlinhado.jpeg" alt="Reflexo Alinhado" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                width="1200" height="1600" loading="lazy" decoding="async">
+            </picture>
           </div>
-          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6">
             <h4 class="text-brand-gold font-bold mb-2 uppercase tracking-widest text-sm">Reflexo Alinhado</h4>
             <p class="text-zinc-300 text-xs">Visual sofisticado e elegante, com um acabamento preciso e harmonioso.</p>
           </div>
         </div>
 
         <!-- Card Cliente 3 -->
-        <div class="group relative overflow-hidden bg-zinc-900 border border-white/5">
+        <div tabindex="0" class="group relative overflow-hidden bg-zinc-900 border border-white/5 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold">
           <div class="aspect-[4/5] overflow-hidden">
-            <img src="img/Regua.png" alt="Corte na Régua" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+            <picture>
+              <source srcset="img/Regua.webp" type="image/webp">
+              <img src="img/Regua.png" alt="Corte na Régua" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                width="1200" height="1600" loading="lazy" decoding="async">
+            </picture>
           </div>
-          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6">
             <h4 class="text-brand-gold font-bold mb-2 uppercase tracking-widest text-sm">Na Régua</h4>
             <p class="text-zinc-300 text-xs">Estilo preciso e moderno, com linhas nítidas e um toque de sofisticação.</p>
           </div>
         </div>
 
         <!-- Card Cliente 4 -->
-        <div class="group relative overflow-hidden bg-zinc-900 border border-white/5">
+        <div tabindex="0" class="group relative overflow-hidden bg-zinc-900 border border-white/5 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold">
           <div class="aspect-[4/5] overflow-hidden">
-            <img src="img/CorteDegrade.png" alt="Corte Degrade" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+            <picture>
+              <source srcset="img/CorteDegrade.webp" type="image/webp">
+              <img src="img/CorteDegrade.png" alt="Corte Degrade" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                width="1200" height="1600" loading="lazy" decoding="async">
+            </picture>
           </div>
-          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6">
             <h4 class="text-brand-gold font-bold mb-2 uppercase tracking-widest text-sm">Degradê Premium</h4>
             <p class="text-zinc-300 text-xs">Transição suave e gradual, para um estilo elegante e versátil.</p>
           </div>
@@ -299,8 +306,11 @@
       <div class="flex flex-col md:flex-row justify-center gap-8 items-center max-w-5xl mx-auto">
         <div class="relative group w-full md:w-1/2">
           <div class="overflow-hidden border border-brand-gold/20 group-hover:border-brand-gold transition-all duration-500 shadow-lg">
-            <img src="img/VitorBueno.png" class="w-full transition-all duration-700 transform group-hover:scale-105"
-              alt="Vitor Bueno">
+            <picture>
+              <source srcset="img/VitorBueno.webp" type="image/webp">
+              <img src="img/VitorBueno.png" class="w-full transition-all duration-700 transform group-hover:scale-105"
+                alt="Vitor Bueno" width="620" height="682" loading="lazy" decoding="async">
+            </picture>
           </div>
           <div class="mt-4 text-center">
             <h5 class="text-brand-gold font-bold uppercase tracking-widest transition-colors group-hover:text-brand-amber">Vitor Bueno</h5>
@@ -310,8 +320,11 @@
 
         <div class="relative group w-full md:w-1/2">
           <div class="overflow-hidden border border-brand-gold/20 group-hover:border-brand-gold transition-all duration-500 shadow-lg">
-            <img src="img/RomuloCardoso.png" class="w-full transition-all duration-700 transform group-hover:scale-105"
-              alt="Romulo Cardoso">
+            <picture>
+              <source srcset="img/RomuloCardoso.webp" type="image/webp">
+              <img src="img/RomuloCardoso.png" class="w-full transition-all duration-700 transform group-hover:scale-105"
+                alt="Romulo Cardoso" width="493" height="614" loading="lazy" decoding="async">
+            </picture>
           </div>
           <div class="mt-4 text-center">
             <h5 class="text-brand-gold font-bold uppercase tracking-widest transition-colors group-hover:text-brand-amber">Romulo Cardoso</h5>
@@ -326,27 +339,31 @@
   <footer class="py-12 bg-black border-t border-white/5">
     <div class="container mx-auto px-4">
       <div class="flex flex-col md:flex-row justify-between items-center gap-8 mb-8">
-        <img src="img/Logotipo_Barbearia_Retrô_Preto_Branco.png" alt="Logo" class="h-16 w-auto brightness-0 invert opacity-50">
+        <picture>
+          <source srcset="img/Logotipo_Barbearia_Retrô_Preto_Branco.webp" type="image/webp">
+          <img src="img/Logotipo_Barbearia_Retrô_Preto_Branco.png" alt="Logo" class="h-16 w-auto brightness-0 invert opacity-50"
+            width="500" height="500" loading="lazy" decoding="async">
+        </picture>
         
         <div class="flex gap-6 items-center">
-          <a href="https://www.instagram.com/barbeariia_ls/" target="_blank" class="w-10 h-10 flex items-center justify-center rounded-full bg-zinc-900 border border-white/10 text-white hover:bg-brand-gold hover:text-black transition-all">
-            <i class="bi bi-instagram text-xl"></i>
+          <a href="https://www.instagram.com/barbeariia_ls/" target="_blank" rel="noopener" aria-label="Instagram da Barbearia LS" class="w-10 h-10 flex items-center justify-center rounded-full bg-zinc-900 border border-white/10 text-white hover:bg-brand-gold hover:text-black transition-all">
+            <i class="bi bi-instagram text-xl" aria-hidden="true"></i>
           </a>
-          <a href="https://api.whatsapp.com/send?phone=5565992920478&text=Ol%C3%A1%2C%20estou%20vindo%20atrav%C3%A9s%20do%20seu%20site!!!" target="_blank" class="w-10 h-10 flex items-center justify-center rounded-full bg-zinc-900 border border-white/10 text-white hover:bg-green-500 hover:text-black transition-all">
-            <i class="bi bi-whatsapp text-xl"></i>
+          <a href="https://api.whatsapp.com/send?phone=5565992920478&text=Ol%C3%A1%2C%20estou%20vindo%20atrav%C3%A9s%20do%20seu%20site!!!" data-whatsapp-link target="_blank" rel="noopener" aria-label="Fale conosco no WhatsApp" class="w-10 h-10 flex items-center justify-center rounded-full bg-zinc-900 border border-white/10 text-white hover:bg-green-500 hover:text-black transition-all">
+            <i class="bi bi-whatsapp text-xl" aria-hidden="true"></i>
           </a>
         </div>
 
         <nav class="flex flex-wrap justify-center gap-6">
-          <a href="#capa" class="text-xs uppercase tracking-widest text-zinc-500 hover:text-white transition-colors">Home</a>
-          <a href="#services" class="text-xs uppercase tracking-widest text-zinc-500 hover:text-white transition-colors">Serviços</a>
-          <a href="#address" class="text-xs uppercase tracking-widest text-zinc-500 hover:text-white transition-colors">Localização</a>
+          <a href="#capa" class="text-xs uppercase tracking-widest text-zinc-400 hover:text-white transition-colors">Home</a>
+          <a href="#services" class="text-xs uppercase tracking-widest text-zinc-400 hover:text-white transition-colors">Serviços</a>
+          <a href="#address" class="text-xs uppercase tracking-widest text-zinc-400 hover:text-white transition-colors">Localização</a>
         </nav>
       </div>
 
       <div class="text-center pt-8 border-t border-white/5">
-        <p class="text-zinc-600 text-xs mb-2 uppercase tracking-widest">Barbearia LS &copy; 2024 - Todos os direitos reservados.</p>
-        <p class="text-zinc-600 text-[10px] uppercase tracking-[0.2em]">
+        <p class="text-zinc-400 text-xs mb-2 uppercase tracking-widest">Barbearia LS &copy; 2024 - Todos os direitos reservados.</p>
+        <p class="text-zinc-400 text-[10px] uppercase tracking-[0.2em]">
           Desenvolvido por <a id="dev" href="https://conectdevjackson.netlify.app/" target="_blank" class="text-brand-gold hover:underline">Jackson Luiz</a>
         </p>
       </div>
@@ -355,12 +372,14 @@
 
   <!-- botão flutuante whatsapp -->
   <a href="https://api.whatsapp.com/send?phone=5565992920478&text=Ol%C3%A1%2C%20estou%20vindo%20atrav%C3%A9s%20do%20seu%20site!!!"
-    class="fixed bottom-6 right-6 z-[9999] w-16 h-16 flex items-center justify-center bg-green-500 rounded-full text-white text-3xl shadow-2xl whatsapp-pulse transition-transform hover:scale-110 active:scale-95" target="_blank">
-    <i class="bi bi-whatsapp"></i>
+    data-whatsapp-link aria-label="Fale conosco no WhatsApp"
+    class="fixed bottom-6 right-6 z-[9999] w-16 h-16 flex items-center justify-center bg-green-500 rounded-full text-white text-3xl shadow-2xl whatsapp-pulse transition-transform hover:scale-110 active:scale-95" target="_blank" rel="noopener">
+    <i class="bi bi-whatsapp" aria-hidden="true"></i>
   </a>
 
   <!-- Conteúdo da página -->
 
+  <script src="js/whatsapp.js" defer></script>
   <script src="js/mobile-menu.js" defer></script>
 </body>
 
