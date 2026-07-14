@@ -111,9 +111,18 @@
         <a class="text-sm font-semibold tracking-widest text-zinc-400 hover:text-brand-gold transition-colors uppercase" href="#clients">Clientes</a>
       </nav>
 
-      <div class="md:hidden text-brand-gold">
+      <button id="mobile-menu-button" type="button" class="md:hidden text-brand-gold" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menu">
         <i class="bi bi-list text-3xl"></i>
-      </div>
+      </button>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden glass border-t border-white/10">
+      <nav class="flex flex-col px-4 py-6 space-y-1" aria-label="Navegação Principal Mobile">
+        <a class="mobile-nav-link block py-2 text-sm font-semibold tracking-widest text-zinc-400 hover:text-brand-gold transition-colors uppercase" href="#capa">Home</a>
+        <a class="mobile-nav-link block py-2 text-sm font-semibold tracking-widest text-zinc-400 hover:text-brand-gold transition-colors uppercase" href="#services">Serviços</a>
+        <a class="mobile-nav-link block py-2 text-sm font-semibold tracking-widest text-zinc-400 hover:text-brand-gold transition-colors uppercase" href="#address">Localização</a>
+        <a class="mobile-nav-link block py-2 text-sm font-semibold tracking-widest text-zinc-400 hover:text-brand-gold transition-colors uppercase" href="#clients">Clientes</a>
+      </nav>
     </div>
   </header>
 
@@ -352,6 +361,7 @@
 
   <!-- Conteúdo da página -->
 
+  <script src="js/mobile-menu.js" defer></script>
 </body>
 
 </html>
